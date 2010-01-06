@@ -1,5 +1,5 @@
+#summary How to install the extension.
 #labels Featured,Phase-Deploy
-How to install the extension.
 
 = Introduction =
 
