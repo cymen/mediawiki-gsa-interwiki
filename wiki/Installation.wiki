@@ -32,4 +32,15 @@ Number of interwiki results to display. Note that when advancing to the next pag
 Ignore prior revisions of pages and files.
 
 = MediaWiki:Search-interwiki-caption =
+The interwiki search results box can have a custom header. We use this to add a link to perform the same search on the GSA and label the box more appropriately:
+{{{
+Other Wikis - <a title='Query XYZ.com directly...' onclick="window.open('http://XYZ.com/search?q=' + document.forms.search.searchText.value + '&site=COLLECTION_CONFIGURED_ON_GSA_TO_USE&output=xml_no_dtd&client=default_frontend&&proxystylesheet=default_frontend&filter=0')">Search GSA</a>
+}}}
+
 = MediaWiki:Search-interwiki-custom =
+In the interwiki search results box the short interwiki name of each wiki is replaced with a caption as defined by you. For example:
+{{{
+products:&#32;Awesome Products
+other:&#32;Other Things
+}}}
+Would make the group label for results from the products wiki be "Awesome Products".
