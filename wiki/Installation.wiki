@@ -11,5 +11,25 @@ No modification of the core Mediawiki software is done. Everything is done as an
   * MediaWiki:Search-interwiki-custom (special page, paste in name and edit it)
 
 = LocalSettings.php =
+{{{
+require_once("extensions/mediawiki-gsa-interwiki/SearchGSA.php");
+$wgSearchType = 'SearchGSA';
+$wgGSA = 'http://IP_OF_GSA/search';
+$wgGSAsite = 'COLLECTION_CONFIGURED_ON_GSA_TO_USE';
+$wgGSAclient = 'default_frontend';
+$wgGSAinterwikiCount = 20;
+$wgGSAignoreArchive = 1;
+}}}
+== wgGSA ==
+String set to HTTP address of your GSA. Using an IP address instead of a hostname is acceptable and may in fact be recommended depending on your environment.
+== wgGSAsite ==
+Name of collection on GSA that contains results for all wikis. Strongly recommended to contain only wiki contain (results that should be displayed from wiki search) otherwise there will be issues.
+== wgGSAclient ==
+Name of GSA frontend to use.
+== wgGSAinterwikiCount ==
+Number of interwiki results to display. Note that when advancing to the next page of search results, the same interwiki results are displayed as before. In other words, only the top $wgGSAinterwikiCount results are displayed.
+== wgGSAignoreArchive ==
+Ignore prior revisions of pages and files.
+
 = MediaWiki:Search-interwiki-caption =
 = MediaWiki:Search-interwiki-custom =
