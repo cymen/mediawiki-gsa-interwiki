@@ -1,4 +1,6 @@
+#summary Performance considerations.
 #labels Phase-Deploy
+
 This extension makes 3 search requests to the GSA for every search request on Mediawiki:
   * Search titles for current wiki
   * Search page text for current wiki
