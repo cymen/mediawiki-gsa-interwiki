@@ -1,0 +1,5 @@
+This extension makes 3 search requests to the GSA for every search request on Mediawiki:
+  * Search titles for current wiki
+  * Search page text for current wiki
+  * Search page text/title for other wikis
+One performance tip that may or may not be useful is to try the IP address of the GSA in the configuration in LocalSettings.php instead of the hostname of the GSA. This may result in better performance as the hostname to IP address does not need to be looked up constantly. On the other hand, it may cause issues down the road if the IP of the GSA changes and the configuration is not updated.
