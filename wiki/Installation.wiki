@@ -6,9 +6,9 @@ The default Mediawiki search can be replaced with one that uses results from a G
 
 No modification of the core Mediawiki software is done. Everything is done as an extension. The configuration needs to be done on each wiki at:
 
-* LocalSettings.php file in root of wiki
-* MediaWiki:Search-interwiki-caption (special page, paste in name and edit it)
-* MediaWiki:Search-interwiki-custom (special page, paste in name and edit it)
+  * LocalSettings.php file in root of wiki
+  * MediaWiki:Search-interwiki-caption (special page, paste in name and edit it)
+  * MediaWiki:Search-interwiki-custom (special page, paste in name and edit it)
 
 = LocalSettings.php =
 = MediaWiki:Search-interwiki-caption =
