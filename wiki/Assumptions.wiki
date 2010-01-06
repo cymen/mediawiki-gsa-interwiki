@@ -1,3 +1,5 @@
+#summary Assumptions made during the development of this extension.
+
 This extension assumes that:
   * There is a collection configured on the GSA that indexes all of the Mediawiki installations and only the Mediawiki installations. Use this to configure the extension. Collections are created and configured on the GSA.
 
