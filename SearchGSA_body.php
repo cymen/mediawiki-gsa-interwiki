@@ -158,6 +158,10 @@ class SearchGSA extends SearchEngine {
                     $sxe = simplexml_import_dom($de);
                     $new_xml->RES->R[$counter]->U   = $sxe->U;
                     $new_xml->RES->R[$counter]->T   = $sxe->T;
+                    if (stripos($sxe->U, 'images/')) {
+                        $pathinfo = pathinfo($sxe->U);
+                        $new_xml->RES->R[$counter]->T .= ' (' . $pathinfo['extension'] . ')';
+                    }
                     $new_xml->RES->R[$counter]->UE  = $sxe->UE;
                     $new_xml->RES->R[$counter]->UT  = $sxe->UT;
                     $new_xml->RES->R[$counter]->S   = $sxe->S;
