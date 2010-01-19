@@ -118,7 +118,7 @@ class SearchGSA extends SearchEngine {
             // could parse XML response but ran into some issues so using regex currently
             $contents = preg_replace(
                 array(
-                    '/' . str_replace('/', '\/', $wgServer . $path . '/') . '([^\/]*)\//',
+                    '/' . str_replace('/', '\/', $wgServer . $path . '/') . '([^\/<]*)\//',
                     '/ - [^-<]* Wiki/',
                 ),
                 array(
